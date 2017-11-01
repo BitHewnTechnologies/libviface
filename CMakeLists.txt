@@ -33,7 +33,7 @@ set(pkgconfig_exec_prefix ${CMAKE_INSTALL_PREFIX})
 set(pkgconfig_libdir ${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_LIBDIR})
 set(pkgconfig_version ${libviface_VERSION_STRING})
 configure_file(
-    "${libviface_SOURCE_DIR}/libviface.pc.in"
+    "${libviface_SOURCE_DIR}/libviface.pc"
     "${CMAKE_BINARY_DIR}/libviface.pc"
     @ONLY
 )
@@ -46,7 +46,7 @@ install(
 
 # Configure library
 configure_file(
-    "${libviface_SOURCE_DIR}/include/viface/config.hpp.in"
+    "${libviface_SOURCE_DIR}/include/viface/config.hpp"
     "${CMAKE_BINARY_DIR}/include/viface/config.hpp"
     @ONLY
 )

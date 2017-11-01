@@ -84,7 +84,7 @@ if(DOXYGEN_FOUND)
         @ONLY
     )
     add_custom_target(
-        doc
+        libviface-doc
         "${DOXYGEN_EXECUTABLE}"
         "${CMAKE_BINARY_DIR}/doxygen.conf"
         WORKING_DIRECTORY "${CMAKE_BINARY_DIR}"
